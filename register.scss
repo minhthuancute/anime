@@ -1,0 +1,304 @@
+* {
+  background-color: #5a5454;
+}
+
+$primary: #b13f3f;
+$secondary: #212121;
+$third: #3e3e3e;
+
+.mid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.space {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.wraper {
+  width: 1200px;
+}
+
+.content {
+  .wraper {
+    box-shadow: 0 0 3px 3px black;
+    background: $third;
+
+    // header
+    .header {
+      .container {
+        background: $secondary;
+        width: 100%;
+        height: 50px;
+        .left {
+          margin-left: 10px;
+          a {
+            font-size: 16px;
+            color: white;
+            opacity: 0.9;
+            background-color: $secondary;
+            transition: all 0.2s ease-in;
+            &:hover {
+              opacity: 1;
+            }
+
+            span {
+              padding: 4px 10px;
+              background-color: $primary;
+              border-radius: 2px;
+              border: 2px solid white;
+            }
+          }
+        }
+
+        .right {
+          color: white;
+          margin-right: 10px;
+          background-color: $secondary;
+          p {
+            margin-right: 10px;
+            background-color: $secondary;
+          }
+          i {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    // menu
+    .menu {
+      margin-top: 10px;
+      .container {
+        background-color: $third;
+        height: 30px;
+        width: 100%;
+
+        .left {
+          margin-left: 10px;
+          form {
+            position: relative;
+            input {
+              width: 250px;
+              padding: 4px 10px;
+              color: white;
+            }
+            i {
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              color: $third;
+              transform: translateY(-50%);
+            }
+          }
+        }
+        .mid-menu {
+          flex-basis: 69%;
+          height: 100%;
+          background-color: $secondary;
+        }
+        .right {
+          margin-right: 10px;
+          background-color: $secondary;
+          opacity: 0.8;
+          transition: all 0.2s ease-in;
+          &:hover {
+            opacity: 1;
+          }
+          a {
+            color: white;
+            padding: 3px 8px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    // login form
+    .login {
+      margin: 20px 0;
+      .container {
+        margin: 0 10px;
+        padding: 15px 0;
+        .menu {
+          ul {
+            display: flex;
+            li {
+              a {
+                text-transform: capitalize;
+                color: white;
+                background-color: $third;
+                padding: 6px 15px;
+                position: relative;
+                font-size: 16px;
+                &:hover {
+                  &::after {
+                    width: 100%;
+                    left: 0;
+                    right: auto;
+                  }
+                }
+                &::after {
+                  position: absolute;
+                  content: "";
+                  width: 0;
+                  height: 100%;
+                  background-color: rgba($color: #fff, $alpha: 0.1);
+                  right: 0;
+                  top: 0;
+                  transition: all 0.3s ease-in;
+                }
+                &.active {
+                  background-color: $secondary;
+                }
+              }
+            }
+          }
+        }
+
+        form {
+          flex-direction: column;
+          margin-top: 30px;
+          .name,
+          .pass,
+          .re-pass,
+          .account,
+          .email {
+            margin-bottom: 15px;
+            position: relative;
+            p {
+              //   margin-right: 35px;
+              color: white;
+            }
+
+            input {
+              width: 400px;
+              padding: 8px 15px;
+              background-color: rgba($color: $primary, $alpha: 0.5);
+              border: 1px solid $third;
+              transition: all 0.3s ease-in;
+              color: white;
+              border-radius: 2px;
+              &::placeholder {
+                color: #ccc;
+              }
+              &:focus {
+                transform: translateY(-4px);
+              }
+            }
+          }
+
+          .btn {
+            margin-top: 10px;
+            button {
+              text-transform: capitalize;
+              padding: 6px 15px;
+              border: 1px solid white;
+              background-color: $primary;
+              opacity: 0.8;
+              transition: all 0.3s ease-in;
+              cursor: pointer;
+              border-radius: 2px;
+              font-size: 16px;
+              margin-right: 15px;
+              &:hover {
+                opacity: 1;
+                color: white;
+              }
+            }
+            a {
+              color: white;
+              transition: all 0.3s ease-in;
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .footer {
+      background-color: $secondary;
+      padding: 15px 0;
+      .container {
+        margin: 0 10px;
+        background-color: $secondary;
+        align-items: unset;
+        .left {
+          background-color: $secondary;
+          h3 {
+            text-transform: uppercase;
+            color: #feca57;
+            padding-bottom: 5px;
+            background-color: $secondary;
+
+            border-bottom: 0.5px solid #ccc;
+          }
+
+          ul {
+            margin-top: 15px;
+            li {
+              padding: 5px 10px;
+              background-color: $secondary;
+              width: 800px;
+              transition: all 0.3s ease-in;
+              cursor: pointer;
+              &:hover {
+                background-color: $third;
+              }
+              a {
+                width: 700px;
+
+                background-color: transparent;
+                color: white;
+                transition: all 0.3s ease-in;
+              }
+            }
+          }
+        }
+
+        .right {
+          background-color: $secondary;
+
+          h3 {
+            text-transform: uppercase;
+            color: #feca57;
+            padding-bottom: 5px;
+            background-color: $secondary;
+
+            border-bottom: 0.5px solid #ccc;
+          }
+          ul {
+            margin-top: 15px;
+            li {
+              padding: 10px;
+              background-color: $secondary;
+
+              a {
+                background-color: $secondary;
+                color: white;
+                border-bottom: 1px solid #ccc;
+                transition: all 0.3s ease-in;
+                &:hover {
+                  border-bottom: 1px solid $third;
+                }
+                i {
+                  background-color: transparent;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
