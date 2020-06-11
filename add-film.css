@@ -157,41 +157,13 @@
   padding: 15px 0;
 }
 
-.content .wraper .login .container .menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.content .wraper .login .container .menu ul li a {
+.content .wraper .login .container .menu p {
+  width: 150px;
   text-transform: capitalize;
   color: white;
   background-color: #3e3e3e;
   padding: 6px 15px;
-  position: relative;
   font-size: 16px;
-}
-
-.content .wraper .login .container .menu ul li a:hover::after {
-  width: 100%;
-  left: 0;
-  right: auto;
-}
-
-.content .wraper .login .container .menu ul li a::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  right: 0;
-  top: 0;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
-.content .wraper .login .container .menu ul li a.active {
-  background-color: #212121;
 }
 
 .content .wraper .login .container form {
@@ -297,7 +269,8 @@
 }
 
 .content .wraper .login .container form .btn {
-  margin-top: 10px;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .content .wraper .login .container form .btn button {
@@ -311,7 +284,6 @@
   cursor: pointer;
   border-radius: 2px;
   font-size: 16px;
-  margin-right: 15px;
 }
 
 .content .wraper .login .container form .btn button:hover {
@@ -415,4 +387,4 @@
 .content .wraper .footer .container .right ul li a i {
   background-color: transparent;
 }
-/*# sourceMappingURL=login.css.map */
+/*# sourceMappingURL=add-film.css.map */
