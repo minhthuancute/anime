@@ -1,0 +1,20 @@
+$primary: #b13f3f;
+$secondary: #212121;
+$third: #3e3e3e;
+
+.list {
+  background-color: $secondary;
+  margin-bottom: 10px;
+  display: none;
+  .container {
+    background-color: $secondary;
+    ul {
+      Li {
+        color: white;
+        padding: 5px 10px;
+        border-bottom: 1px solid $third;
+        background-color: $secondary;
+      }
+    }
+  }
+}

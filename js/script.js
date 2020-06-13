@@ -63,8 +63,15 @@ $(document).ready(function () {
     renderCommnent(comment);
   });
 
-  $("#reply").click(function () {
-    $("div").fadeIn();
+  let count = false;
+  $("#list").click(function () {
+    console.log("abc");
+    count = !count;
+    if (count) {
+      $(".list").fadeIn();
+    } else {
+      $(".list").fadeOut();
+    }
   });
 
   $("#landing").owlCarousel({
