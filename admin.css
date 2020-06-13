@@ -1,0 +1,244 @@
+* {
+  background-color: #5a5454;
+}
+
+.mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wraper {
+  width: 1200px;
+}
+
+.content .wraper {
+  -webkit-box-shadow: 0 0 3px 3px black;
+          box-shadow: 0 0 3px 3px black;
+  background: #3e3e3e;
+}
+
+.content .wraper .header .thuancute {
+  background: #212121;
+  width: 100%;
+  height: 50px;
+}
+
+.content .wraper .header .thuancute .left {
+  margin-left: 10px;
+}
+
+.content .wraper .header .thuancute .left a {
+  font-size: 16px;
+  color: white;
+  opacity: 0.9;
+  background-color: #212121;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.content .wraper .header .thuancute .left a:hover {
+  opacity: 1;
+}
+
+.content .wraper .header .thuancute .left a span {
+  padding: 4px 10px;
+  background-color: #b13f3f;
+  border-radius: 2px;
+  border: 2px solid white;
+}
+
+.content .wraper .header .thuancute .right {
+  color: white;
+  margin-right: 10px;
+  background-color: #212121;
+}
+
+.content .wraper .header .thuancute .right p {
+  margin-right: 10px;
+  background-color: #212121;
+}
+
+.content .wraper .header .thuancute .right i {
+  cursor: pointer;
+}
+
+.content .wraper .menu {
+  margin-top: 10px;
+}
+
+.content .wraper .menu .thuancute {
+  background-color: #3e3e3e;
+  height: 30px;
+  width: 100%;
+}
+
+.content .wraper .menu .thuancute .left {
+  margin-left: 10px;
+}
+
+.content .wraper .menu .thuancute .left form {
+  position: relative;
+}
+
+.content .wraper .menu .thuancute .left form input {
+  width: 250px;
+  padding: 4px 10px;
+  color: white;
+}
+
+.content .wraper .menu .thuancute .left form i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  color: #3e3e3e;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.content .wraper .menu .thuancute .mid-menu {
+  -ms-flex-preferred-size: 69%;
+      flex-basis: 69%;
+  height: 100%;
+  background-color: #212121;
+}
+
+.content .wraper .table {
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+.content .wraper .table .thuancute {
+  width: 1200px;
+  background-color: transparent;
+  margin-top: 15px;
+}
+
+.content .wraper .table .thuancute table {
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: transparent;
+}
+
+.content .wraper .table .thuancute table thead tr th {
+  background-color: #212121;
+  color: #b13f3f;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.content .wraper .footer {
+  background-color: #212121;
+  padding: 15px 0;
+}
+
+.content .wraper .footer .thuancute {
+  margin: 0 10px;
+  background-color: #212121;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.content .wraper .footer .thuancute .left {
+  background-color: #212121;
+}
+
+.content .wraper .footer .thuancute .left h3 {
+  text-transform: uppercase;
+  color: #feca57;
+  padding-bottom: 5px;
+  background-color: #212121;
+  border-bottom: 0.5px solid #ccc;
+}
+
+.content .wraper .footer .thuancute .left ul {
+  margin-top: 15px;
+}
+
+.content .wraper .footer .thuancute .left ul li {
+  padding: 5px 10px;
+  background-color: #212121;
+  width: 800px;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.content .wraper .footer .thuancute .left ul li:hover {
+  background-color: #3e3e3e;
+}
+
+.content .wraper .footer .thuancute .left ul li a {
+  width: 700px;
+  background-color: transparent;
+  color: white;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.content .wraper .footer .thuancute .right {
+  background-color: #212121;
+}
+
+.content .wraper .footer .thuancute .right h3 {
+  text-transform: uppercase;
+  color: #feca57;
+  padding-bottom: 5px;
+  background-color: #212121;
+  border-bottom: 0.5px solid #ccc;
+}
+
+.content .wraper .footer .thuancute .right ul {
+  margin-top: 15px;
+}
+
+.content .wraper .footer .thuancute .right ul li {
+  padding: 10px;
+  background-color: #212121;
+}
+
+.content .wraper .footer .thuancute .right ul li a {
+  background-color: #212121;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.content .wraper .footer .thuancute .right ul li a:hover {
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.content .wraper .footer .thuancute .right ul li a i {
+  background-color: transparent;
+}
+/*# sourceMappingURL=admin.css.map */
