@@ -201,6 +201,24 @@ $third: #3e3e3e;
               }
             }
           }
+
+          tbody {
+            tr {
+              td {
+                button {
+                  color: white;
+                  i {
+                    cursor: pointer;
+                    font-size: 18px;
+                    transition: all 0.2s ease-in;
+                    &:hover {
+                      color: $primary;
+                    }
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }

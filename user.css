@@ -236,6 +236,21 @@
   font-size: 18px;
 }
 
+.content .wraper .table .thuancute table tbody tr td button {
+  color: white;
+}
+
+.content .wraper .table .thuancute table tbody tr td button i {
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.content .wraper .table .thuancute table tbody tr td button i:hover {
+  color: #b13f3f;
+}
+
 .content .wraper .footer {
   background-color: #212121;
   padding: 15px 0;
