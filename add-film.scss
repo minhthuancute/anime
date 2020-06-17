@@ -163,7 +163,8 @@ $third: #3e3e3e;
               }
             }
 
-            input {
+            input,
+            select {
               width: 400px;
               padding: 8px 15px;
               background-color: rgba($color: $primary, $alpha: 0.5);
@@ -176,6 +177,70 @@ $third: #3e3e3e;
               }
               &:focus {
                 transform: translateY(-4px);
+              }
+            }
+          }
+
+          .list {
+            flex-direction: column;
+
+            p {
+              color: white;
+            }
+
+            ul {
+              margin-left: 135px;
+              li {
+                padding: 8px 0;
+                color: white;
+
+                label {
+                  color: white;
+                  display: flex;
+                  align-items: center;
+                }
+
+                input {
+                  position: relative;
+                  width: 25px;
+                  height: 25px;
+                  overflow: hidden;
+                  cursor: pointer;
+                  margin-left: 15px;
+
+                  &:checked {
+                    &::after {
+                      opacity: 1;
+                    }
+                  }
+                  &::before {
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: white;
+                    z-index: 1;
+                    border-radius: 4px;
+                  }
+
+                  &::after {
+                    z-index: 100;
+                    content: "";
+                    width: 6px;
+                    height: 16px;
+                    border: solid $primary;
+                    border-width: 0 3px 3px 0;
+                    position: absolute;
+                    background-color: transparent;
+                    left: 45%;
+                    bottom: 4px;
+                    transform: rotate(45deg) translateX(-45%);
+                    transition: all 0.2s ease-in;
+                    opacity: 0;
+                  }
+                }
               }
             }
           }

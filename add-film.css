@@ -213,10 +213,15 @@
 }
 
 .content .wraper .login .container form .name input,
+.content .wraper .login .container form .name select,
 .content .wraper .login .container form .pass input,
+.content .wraper .login .container form .pass select,
 .content .wraper .login .container form .re-pass input,
+.content .wraper .login .container form .re-pass select,
 .content .wraper .login .container form .account input,
-.content .wraper .login .container form .email input {
+.content .wraper .login .container form .account select,
+.content .wraper .login .container form .email input,
+.content .wraper .login .container form .email select {
   width: 400px;
   padding: 8px 15px;
   background-color: rgba(177, 63, 63, 0.5);
@@ -228,44 +233,142 @@
 }
 
 .content .wraper .login .container form .name input::-webkit-input-placeholder,
+.content .wraper .login .container form .name select::-webkit-input-placeholder,
 .content .wraper .login .container form .pass input::-webkit-input-placeholder,
+.content .wraper .login .container form .pass select::-webkit-input-placeholder,
 .content .wraper .login .container form .re-pass input::-webkit-input-placeholder,
+.content .wraper .login .container form .re-pass select::-webkit-input-placeholder,
 .content .wraper .login .container form .account input::-webkit-input-placeholder,
-.content .wraper .login .container form .email input::-webkit-input-placeholder {
+.content .wraper .login .container form .account select::-webkit-input-placeholder,
+.content .wraper .login .container form .email input::-webkit-input-placeholder,
+.content .wraper .login .container form .email select::-webkit-input-placeholder {
   color: #ccc;
 }
 
 .content .wraper .login .container form .name input:-ms-input-placeholder,
+.content .wraper .login .container form .name select:-ms-input-placeholder,
 .content .wraper .login .container form .pass input:-ms-input-placeholder,
+.content .wraper .login .container form .pass select:-ms-input-placeholder,
 .content .wraper .login .container form .re-pass input:-ms-input-placeholder,
+.content .wraper .login .container form .re-pass select:-ms-input-placeholder,
 .content .wraper .login .container form .account input:-ms-input-placeholder,
-.content .wraper .login .container form .email input:-ms-input-placeholder {
+.content .wraper .login .container form .account select:-ms-input-placeholder,
+.content .wraper .login .container form .email input:-ms-input-placeholder,
+.content .wraper .login .container form .email select:-ms-input-placeholder {
   color: #ccc;
 }
 
 .content .wraper .login .container form .name input::-ms-input-placeholder,
+.content .wraper .login .container form .name select::-ms-input-placeholder,
 .content .wraper .login .container form .pass input::-ms-input-placeholder,
+.content .wraper .login .container form .pass select::-ms-input-placeholder,
 .content .wraper .login .container form .re-pass input::-ms-input-placeholder,
+.content .wraper .login .container form .re-pass select::-ms-input-placeholder,
 .content .wraper .login .container form .account input::-ms-input-placeholder,
-.content .wraper .login .container form .email input::-ms-input-placeholder {
+.content .wraper .login .container form .account select::-ms-input-placeholder,
+.content .wraper .login .container form .email input::-ms-input-placeholder,
+.content .wraper .login .container form .email select::-ms-input-placeholder {
   color: #ccc;
 }
 
 .content .wraper .login .container form .name input::placeholder,
+.content .wraper .login .container form .name select::placeholder,
 .content .wraper .login .container form .pass input::placeholder,
+.content .wraper .login .container form .pass select::placeholder,
 .content .wraper .login .container form .re-pass input::placeholder,
+.content .wraper .login .container form .re-pass select::placeholder,
 .content .wraper .login .container form .account input::placeholder,
-.content .wraper .login .container form .email input::placeholder {
+.content .wraper .login .container form .account select::placeholder,
+.content .wraper .login .container form .email input::placeholder,
+.content .wraper .login .container form .email select::placeholder {
   color: #ccc;
 }
 
 .content .wraper .login .container form .name input:focus,
+.content .wraper .login .container form .name select:focus,
 .content .wraper .login .container form .pass input:focus,
+.content .wraper .login .container form .pass select:focus,
 .content .wraper .login .container form .re-pass input:focus,
+.content .wraper .login .container form .re-pass select:focus,
 .content .wraper .login .container form .account input:focus,
-.content .wraper .login .container form .email input:focus {
+.content .wraper .login .container form .account select:focus,
+.content .wraper .login .container form .email input:focus,
+.content .wraper .login .container form .email select:focus {
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
+}
+
+.content .wraper .login .container form .list {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .wraper .login .container form .list p {
+  color: white;
+}
+
+.content .wraper .login .container form .list ul {
+  margin-left: 135px;
+}
+
+.content .wraper .login .container form .list ul li {
+  padding: 8px 0;
+  color: white;
+}
+
+.content .wraper .login .container form .list ul li label {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .wraper .login .container form .list ul li input {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.content .wraper .login .container form .list ul li input:checked::after {
+  opacity: 1;
+}
+
+.content .wraper .login .container form .list ul li input::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  border-radius: 4px;
+}
+
+.content .wraper .login .container form .list ul li input::after {
+  z-index: 100;
+  content: "";
+  width: 6px;
+  height: 16px;
+  border: solid #b13f3f;
+  border-width: 0 3px 3px 0;
+  position: absolute;
+  background-color: transparent;
+  left: 45%;
+  bottom: 4px;
+  -webkit-transform: rotate(45deg) translateX(-45%);
+          transform: rotate(45deg) translateX(-45%);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  opacity: 0;
 }
 
 .content .wraper .login .container form .btn {
